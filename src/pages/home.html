@@ -1,0 +1,62 @@
+<!--{"path": "", "title": "LoadandGo.com: Free Load Calculators for Moving Trucks, Pickups, Trailers and Freight", "desc": "Free calculators and guides for anyone about to load something: truck size, payload, towing, tie-downs, fuel cost, pallets and freight class, with fuel prices updated every week."}-->
+<section class="hero"><div class="wrap"><div class="placard">
+<div>
+<h1>Know it fits before you lift it.</h1>
+<p class="lede">Free calculators for anyone about to load something: a moving truck, a pickup bed, a trailer or a 53-foot van. Size, weight, straps, fuel and cost, worked out before the heavy part starts.</p>
+<p><a class="btn" href="{{root}}tools/">Open the calculators</a> <a class="btn alt" href="{{root}}quote/">Request free quotes</a></p>
+</div>
+<div class="hero-tool">
+<label for="ht-rooms">Slide to the number of furnished rooms you are moving</label>
+<input id="ht-rooms" type="range" min="1" max="10" value="4">
+<p id="ht-n">4 furnished rooms</p>
+<svg class="truck" viewBox="0 0 500 180" role="img" aria-label="Side view of a box truck. The shaded part of the cargo box shows how full it would be.">
+<rect x="8" y="14" width="326" height="122" rx="4" fill="#fff" stroke="#1D2327" stroke-width="5"/>
+<rect class="fill" id="ht-fill" x="12" y="18" width="0" height="114"/>
+<path d="M340 56h84l52 46v34H340z" fill="#FFD21F" stroke="#1D2327" stroke-width="5" stroke-linejoin="round"/>
+<path d="M392 68h28l34 30h-62z" fill="#fff" stroke="#1D2327" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="92" cy="146" r="24" fill="#1D2327"/><circle cx="92" cy="146" r="9" fill="#E9EDEE"/>
+<circle cx="410" cy="146" r="24" fill="#1D2327"/><circle cx="410" cy="146" r="9" fill="#E9EDEE"/>
+</svg>
+<output id="ht-truck" for="ht-rooms">15 to 16 ft box truck</output>
+<p id="ht-cuft">Move the slider to size your truck.</p>
+<a href="{{root}}tools/truck-size-calculator/">Add appliances, boxes and garage items for a closer answer</a>
+</div>
+</div></div></section>
+
+<section class="band"><div class="wrap">
+<h2>This week on the loading dock</h2>
+{{brief}}
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>{{tool_count}} calculators, one question each</h2>
+<p class="lede">Every calculator shows its working, runs in your browser and remembers your numbers on this device. No account, no email wall.</p>
+{{tools_list}}
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>Guides that explain the numbers</h2>
+{{guides_top}}
+<p class="more"><a href="{{root}}guides/">Read all {{guide_count}} guides</a></p>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>Watch it done</h2>
+<p class="lede">Loading, towing and tie-down videos from rental companies, hitch makers and working movers, pulled in fresh from YouTube.</p>
+{{videos_top}}
+<p class="more"><a href="{{root}}videos/">See the full video library</a></p>
+{{lead}}
+</div></section>
+
+<section class="band"><div class="wrap two">
+<div class="prose">
+<h2>What this site is, and is not</h2>
+<p>LoadandGo.com is an independent reference for people who load things: households planning a move, pickup and trailer owners, and small carriers checking a load. The calculators use published rules and typical equipment figures, and each page says where its numbers come from.</p>
+<p>We do not rent trucks, sell boxes, move furniture or broker freight. When you ask for quotes, we read the request and introduce you to providers. Advertising and reader support keep everything free. Read <a href="{{root}}about/">how we work</a>.</p>
+</div>
+<div>
+<h2>The weekly haul brief</h2>
+<p>Fuel price moves, one loading tip and any new calculator, once a week by email. Unsubscribe by replying.</p>
+{{form:newsletter}}
+</div>
+</div></section>
