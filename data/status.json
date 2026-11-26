@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-26T06:09:23+00:00",
+ "run_at": "2026-11-26T17:05:49+00:00",
  "sources": [
   {
    "kind": "fuel",
@@ -106,7 +106,7 @@
    "name": "Google News: trucking",
    "url": "https://news.google.com/rss/search?q=trucking+freight+rates+OR+%22owner-operator%22+OR+FMCSA+when:7d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
-   "count": 5
+   "count": 7
   },
   {
    "kind": "news",
@@ -138,8 +138,8 @@
   {
    "kind": "video",
    "name": "etrailer",
-   "ok": true,
-   "count": 3
+   "ok": false,
+   "count": 0
   },
   {
    "kind": "video",
@@ -178,8 +178,8 @@
    "count": 3
   }
  ],
- "news_items": 114,
+ "news_items": 120,
  "video_items": 22,
- "ok_sources": 26,
+ "ok_sources": 25,
  "total_sources": 28
 }
