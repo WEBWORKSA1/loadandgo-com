@@ -1,0 +1,15 @@
+{
+ "name": "LoadandGo.com",
+ "short_name": "LoadandGo",
+ "start_url": "./",
+ "display": "standalone",
+ "background_color": "#E9EDEE",
+ "theme_color": "#FFD21F",
+ "icons": [
+  {
+   "src": "assets/img/icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}
