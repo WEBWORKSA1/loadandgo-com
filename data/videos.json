@@ -2,88 +2,10 @@
  "updated": "2026-11-26T06:06:11+00:00",
  "items": [
   {
-   "id": "fXKZfQn080Q",
-   "title": "Cargo Theft Alert: Inside the $22.5 Million Train Heist Playbook",
-   "channel": "FreightWaves",
-   "date": "2026-11-25T23:00:39+00:00"
-  },
-  {
-   "id": "bv5kTJ50aFA",
-   "title": "AI in Logistics: Why Humans Beat Machines on 1 Truck (But Lose on 1,000)",
-   "channel": "FreightWaves",
-   "date": "2026-11-25T22:00:05+00:00"
-  },
-  {
-   "id": "7qLRduA-BDM",
-   "title": "The $22.5 Million California Train Heist Ring Busted | WHAT THE TRUCK?!?",
-   "channel": "FreightWaves",
-   "date": "2026-11-25T19:00:23+00:00"
-  },
-  {
-   "id": "VxKOxGRwDuc",
-   "title": "FreightWaves Today | November 25",
-   "channel": "FreightWaves",
-   "date": "2026-11-25T16:59:50+00:00"
-  },
-  {
-   "id": "6TwTnVLVQq0",
-   "title": "etrailer | Review of Furrion Replacement Hose Hook RV Dishwasher - FR82WF",
-   "channel": "etrailer",
-   "date": "2026-11-25T12:33:11+00:00"
-  },
-  {
-   "id": "vfaLpJI4y2g",
-   "title": "etrailer | Review of MEC Propane Accessories - Dust Plug Propane Quick Disconnect Coupler - MEC79TR",
-   "channel": "etrailer",
-   "date": "2026-11-25T12:32:47+00:00"
-  },
-  {
-   "id": "XPrawbwPKIc",
-   "title": "etrailer | Review of Furrion Replacement Silver 12V Button RV Range Hood - FR75JF",
-   "channel": "etrailer",
-   "date": "2026-11-25T12:32:46+00:00"
-  },
-  {
-   "id": "UZuDmA0R_fU",
-   "title": "etrailer | Victron VE.Direct to USB Interface Review and Installation",
-   "channel": "etrailer",
-   "date": "2026-11-25T12:32:16+00:00"
-  },
-  {
    "id": "1CUgfvI37iQ",
    "title": "How To Install A Trailer Hitch On Chrysler Pacifica, Voyager & Grand Caravan | CURT",
    "channel": "CURT",
    "date": "2026-11-20T02:00:23+00:00"
-  },
-  {
-   "id": "QaBlJO6rQ7k",
-   "title": "PODS was honored to help this military family move | PODS",
-   "channel": "PODS",
-   "date": "2026-11-12T16:51:55+00:00"
-  },
-  {
-   "id": "5iSgVUqpXDk",
-   "title": "Movers for Military - VetLife",
-   "channel": "TWO MEN AND A TRUCK",
-   "date": "2026-11-01T04:01:02+00:00"
-  },
-  {
-   "id": "O0vsF5JJw3M",
-   "title": "Truckload of Warmth - Emma Truman",
-   "channel": "TWO MEN AND A TRUCK",
-   "date": "2026-10-27T16:37:40+00:00"
-  },
-  {
-   "id": "zK-gsB6wLqs",
-   "title": "Movers for Mutts - Jac Gingrich",
-   "channel": "TWO MEN AND A TRUCK",
-   "date": "2026-10-27T16:36:03+00:00"
-  },
-  {
-   "id": "4oz0YWdLuIg",
-   "title": "The Easiest Trailer Wiring Upgrade | CURT",
-   "channel": "CURT",
-   "date": "2026-10-23T14:00:28+00:00"
   },
   {
    "id": "Vm48ypkpoVk",
@@ -96,12 +18,6 @@
    "title": "How To Install A Trailer Hitch On A KIA Sportage, Hyundai Tucson | CURT",
    "channel": "CURT",
    "date": "2026-10-20T17:00:12+00:00"
-  },
-  {
-   "id": "H242qM6ErAM",
-   "title": "Investing in TWO MEN AND A TRUCK",
-   "channel": "TWO MEN AND A TRUCK",
-   "date": "2026-10-12T13:37:14+00:00"
   },
   {
    "id": "FPLJAWLwHmY",
@@ -128,64 +44,16 @@
    "date": "2024-12-14T01:10:22+00:00"
   },
   {
-   "id": "IfEGjAjSwUA",
-   "title": "U-Pack Customer Story - Trailer Move | U-Pack",
-   "channel": "U-Pack",
-   "date": "2024-10-23T16:11:35+00:00"
-  },
-  {
-   "id": "mPaStzz5UYo",
-   "title": "U-Pack Family Move - Phoenix to Dallas | U-Pack",
-   "channel": "U-Pack",
-   "date": "2024-10-23T14:05:51+00:00"
-  },
-  {
-   "id": "lOR4hNPIfW4",
-   "title": "U-Pack Customer Move - Miami | U-Pack",
-   "channel": "U-Pack",
-   "date": "2024-10-23T14:05:45+00:00"
-  },
-  {
-   "id": "pqmQZ25nC_Y",
-   "title": "Our House Sold Fast: Storage Between Homes | PODS",
-   "channel": "PODS",
-   "date": "2024-09-05T19:48:59+00:00"
-  },
-  {
-   "id": "fVxZxg7S1d4",
-   "title": "Relocating for a Job: Moving Cross-Country With PODS",
-   "channel": "PODS",
-   "date": "2024-09-05T16:13:49+00:00"
-  },
-  {
    "id": "lGgz6tk4VVQ",
    "title": "How PODS City Service Works: Moving Without a Driveway",
    "channel": "PODS",
    "date": "2024-06-12T13:36:51+00:00"
   },
   {
-   "id": "qq8GkKtEKKg",
-   "title": "Ready-To-Go Boxes are perfect for the city movers! 🙌",
-   "channel": "U-Haul",
-   "date": "2023-07-06T16:21:42+00:00"
-  },
-  {
-   "id": "WAo0aZXaCdo",
-   "title": "Ready-To-Go Boxes are ready when you are! 🙌",
-   "channel": "U-Haul",
-   "date": "2023-07-06T16:19:44+00:00"
-  },
-  {
    "id": "jHepDo-hq3Y",
    "title": "Tips for Moving a Cat Long Distance",
    "channel": "U-Pack",
    "date": "2018-03-05T17:02:27+00:00"
-  },
-  {
-   "id": "Vv-pJzCpCKA",
-   "title": "Rental Truck Video Magic - Penske Truck Rental",
-   "channel": "Penske Truck Rental",
-   "date": "2014-01-13T15:05:27+00:00"
   },
   {
    "id": "Nz2L4l3CvCI",

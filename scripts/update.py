@@ -25,6 +25,18 @@ DATA = ROOT / "data"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 NOW = dt.datetime.now(dt.timezone.utc)
 STATUS = {"run_at": NOW.isoformat(timespec="seconds"), "sources": []}
+WANT = re.compile(r"how[ -]to|how .{0,30} works|\btips?\b|guide|what you need to know|moving truck|truck (review|size)|"
+                  r"\bload(ing|ed)?\b|\bpack(ing)?\b|\btow(ing)?\b|tie[- ]?downs?|\bstraps?\b|secur|weigh|payload|sway|"
+                  r"pros,? cons|save money|mistakes?|checklist|explained", re.I)
+SKIP = re.compile(r"review of|customer (story|move)|#shorts|podcast|what the truck|investing|franchise|honored|"
+                  r"movers for|truckload of|giveaway|sweepstakes", re.I)
+
+
+def useful_video(title, channel):
+    t = re.sub(re.escape(channel), " ", title, flags=re.I)
+    return bool(WANT.search(t)) and not SKIP.search(t)
+
+
 TOPIC = re.compile(r"mov|load|truck|trailer|tow|haul|pack|hitch|freight|cargo|storage|strap|tie|box|container|"
                    r"ship|driv|rental|pallet|weigh|payload|fuel|diesel", re.I)
 
@@ -60,12 +72,12 @@ def clean(s, words=30):
     return " ".join(parts[:words]).rstrip(",.;:") + "…" if len(parts) > words else s
 
 
-def to_iso(entry):
+def to_iso(entry, fallback=True):
     for key in ("published_parsed", "updated_parsed"):
         t = entry.get(key)
         if t:
             return dt.datetime(*t[:6], tzinfo=dt.timezone.utc).isoformat(timespec="seconds")
-    return NOW.isoformat(timespec="seconds")
+    return NOW.isoformat(timespec="seconds") if fallback else None
 
 
 # ---------------------------------------------------------------- fuel
@@ -154,9 +166,10 @@ def update_news(sources):
                     m = re.match(r"^(.*) - ([^-]{2,60})$", title)
                     if m:
                         title, source = m.group(1).strip(), m.group(2).strip()
-                if src.get("filter") and not TOPIC.search(title):
-                    continue
-                got.append({"title": title, "link": link, "source": source, "date": to_iso(e), "cat": src["cat"]})
+                when = to_iso(e, fallback=False)
+                if not when or (src.get("filter") and not TOPIC.search(title)):
+                    continue  # undated entries are usually stale archive items
+                got.append({"title": title, "link": link, "source": source, "date": when, "cat": src["cat"]})
             items.extend(got)
             rec.update(ok=bool(got), count=len(got))
         except Exception as e:  # noqa: BLE001
@@ -213,7 +226,7 @@ def update_videos(channels):
             for e in feed.entries[:12]:
                 vid = e.get("yt_videoid") or e.get("id", "").split(":")[-1]
                 title = clean(e.get("title", ""), 22)
-                if not vid or not title or "#shorts" in title.lower() or not TOPIC.search(title):
+                if not vid or not title or not useful_video(title, ch["name"]):
                     continue
                 got.append({"id": vid, "title": title, "channel": ch["name"], "date": to_iso(e)})
             items.extend(got[:4])
@@ -224,11 +237,13 @@ def update_videos(channels):
         print(f"video {rec['ok']!s:5} {rec['count']:3}  {ch['name']}", file=sys.stderr)
     save("channels.json", cache)
     items.extend(old.get("items", []))
-    seen, out = set(), []
+    seen, per, out = set(), {}, []
     for it in sorted(items, key=lambda x: x.get("date", ""), reverse=True):
-        if it["id"] not in seen:
-            seen.add(it["id"])
-            out.append(it)
+        if it["id"] in seen or not useful_video(it["title"], it["channel"]) or per.get(it["channel"], 0) >= 5:
+            continue
+        seen.add(it["id"])
+        per[it["channel"]] = per.get(it["channel"], 0) + 1
+        out.append(it)
     save("videos.json", {"updated": NOW.isoformat(timespec="seconds"), "items": out[:36]})
     return len(out[:36])
 
