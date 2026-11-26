@@ -1,0 +1,25 @@
+{
+  "_note": "Edit this file to add or remove sources. The refresh workflow reads it on every run; a source that fails is skipped and reported in data/status.json. Videos: give a YouTube handle (resolved to a channel automatically) or a channel id as \"channel\".",
+  "news": [
+    {"cat": "moving", "name": "Google News: moving", "url": "https://news.google.com/rss/search?q=%22moving+company%22+OR+%22moving+companies%22+OR+%22truck+rental%22+OR+%22moving+scam%22&hl=en-US&gl=US&ceid=US:en"},
+    {"cat": "moving", "name": "Google News: relocation trends", "url": "https://news.google.com/rss/search?q=%22migration+report%22+movers+OR+%22moving+trends%22+OR+%22cost+of+moving%22&hl=en-US&gl=US&ceid=US:en"},
+    {"cat": "trucking", "name": "FreightWaves", "url": "https://www.freightwaves.com/feed"},
+    {"cat": "trucking", "name": "Transport Topics", "url": "https://www.ttnews.com/rss.xml"},
+    {"cat": "trucking", "name": "Google News: trucking", "url": "https://news.google.com/rss/search?q=trucking+freight+rates+OR+%22owner-operator%22+OR+FMCSA&hl=en-US&gl=US&ceid=US:en"},
+    {"cat": "towing", "name": "Google News: towing and trailers", "url": "https://news.google.com/rss/search?q=%22towing+capacity%22+OR+%22trailer+recall%22+OR+%22pickup+payload%22+OR+%22cargo+securement%22&hl=en-US&gl=US&ceid=US:en"},
+    {"cat": "fuel", "name": "EIA Today in Energy", "url": "https://www.eia.gov/rss/todayinenergy.xml"},
+    {"cat": "fuel", "name": "Google News: fuel prices", "url": "https://news.google.com/rss/search?q=%22diesel+prices%22+OR+%22gas+prices%22+national+average&hl=en-US&gl=US&ceid=US:en"}
+  ],
+  "videos": [
+    {"name": "U-Haul", "handle": "uhaul"},
+    {"name": "etrailer", "handle": "etrailer"},
+    {"name": "PODS", "handle": "PODS"},
+    {"name": "HireAHelper", "handle": "HireAHelper"},
+    {"name": "CURT", "handle": "curtmfg"},
+    {"name": "TWO MEN AND A TRUCK", "handle": "twomenandatruck"},
+    {"name": "Penske Truck Rental", "handle": "PenskeTruckRental"},
+    {"name": "FreightWaves", "handle": "FreightWaves"},
+    {"name": "U-Pack", "handle": "upack"},
+    {"name": "FMCSA", "handle": "usdotfmcsa"}
+  ]
+}
