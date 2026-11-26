@@ -4,6 +4,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--steel);color:var(--ink);font:400 1.0625rem/1.55 var(--body)}
+[hidden]{display:none!important}
 img,svg{max-width:100%;height:auto}
 a{color:var(--strap-d);text-underline-offset:.15em}
 a:hover{color:var(--ink)}
@@ -40,6 +41,7 @@ small{color:var(--muted);font-size:.86rem}
 .btn.alt{background:var(--paper);color:var(--ink);border-color:var(--ink)}
 .btn.alt:hover{background:var(--ink);color:#fff}
 .btn.small{padding:8px 14px;font-size:.95rem}
+p>.btn{margin:0 6px 8px 0}
 
 /* home */
 .hero{padding:34px 0 10px}
@@ -73,7 +75,7 @@ small{color:var(--muted);font-size:.86rem}
 .guide-list p{margin:.35em 0}
 .guide-list span{font-size:.86rem;color:var(--muted)}
 
-.brief{display:grid;grid-template-columns:1.1fr 1fr 1.3fr;background:var(--paper);border:3px solid var(--ink);border-radius:10px}
+.brief{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));background:var(--paper);border:3px solid var(--ink);border-radius:10px}
 .brief>div{padding:20px 22px;border-right:1px solid var(--line)}
 .brief>div:last-child{border-right:0}
 .brief .num{font:700 2.6rem/1 var(--disp);margin:0}
@@ -157,6 +159,7 @@ textarea{resize:vertical}
 .form-done{font:700 1.7rem/1.15 var(--disp);margin:0}
 .invalid{border-color:var(--red)!important;background:#FFF4F2}
 .two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:44px;align-items:start}
+.two .prose>h2:first-child{margin-top:0}
 .steps-list{counter-reset:s;list-style:none;padding:0}
 .steps-list li{counter-increment:s;padding:12px 0 12px 52px;position:relative;border-top:1px solid var(--line)}
 .steps-list li::before{content:counter(s);position:absolute;left:0;top:10px;width:36px;height:36px;border:3px solid var(--ink);border-radius:50%;background:var(--placard);font:700 1.25rem/30px var(--disp);text-align:center}
@@ -166,7 +169,7 @@ textarea{resize:vertical}
 #pay-links{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
 
 /* videos, news, fuel, checklist */
-.vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:26px}
+.vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:26px;margin-bottom:22px}
 .vid h3{margin:.5em 0 .1em;font-size:1.25rem}
 .vid p{font-size:.88rem;color:var(--muted);margin:0}
 .vid-play{position:relative;display:block;width:100%;padding:0;border:3px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--ink);cursor:pointer;aspect-ratio:16/9}
@@ -201,12 +204,10 @@ textarea{resize:vertical}
 .foot-cols li{margin-bottom:7px}
 .site-foot .fine{color:#b8c1c5;max-width:100ch}
 .cookie{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;background:var(--paper);border:3px solid var(--ink);border-radius:10px;padding:14px 16px;display:flex;gap:14px;align-items:center;z-index:8}
-.cookie[hidden]{display:none}
 .cookie p{margin:0;font-size:.92rem}
 
 @media (max-width:900px){
 .placard,.split,.calc,.two{grid-template-columns:1fr}
-.brief{grid-template-columns:1fr}
 .brief>div{border-right:0;border-bottom:1px solid var(--line)}
 .ticket{position:static}
 .foot-cols{grid-template-columns:1fr 1fr}
