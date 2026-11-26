@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-26T06:06:11+00:00",
+ "run_at": "2026-11-26T06:09:23+00:00",
  "sources": [
   {
    "kind": "fuel",
@@ -75,17 +75,17 @@
   },
   {
    "kind": "news",
-   "name": "Google News: moving",
-   "url": "https://news.google.com/rss/search?q=%22moving+company%22+OR+%22moving+companies%22+OR+%22truck+rental%22+OR+%22moving+scam%22&hl=en-US&gl=US&ceid=US:en",
+   "name": "Google News: moving companies",
+   "url": "https://news.google.com/rss/search?q=%22moving+company%22+OR+%22moving+companies%22+OR+movers+OR+%22truck+rental%22+when:14d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
    "count": 25
   },
   {
    "kind": "news",
-   "name": "Google News: relocation trends",
-   "url": "https://news.google.com/rss/search?q=%22migration+report%22+movers+OR+%22moving+trends%22+OR+%22cost+of+moving%22&hl=en-US&gl=US&ceid=US:en",
+   "name": "Google News: relocation",
+   "url": "https://news.google.com/rss/search?q=%22moving+costs%22+OR+%22moving+scam%22+OR+%22moving+truck%22+OR+relocation+movers+when:14d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
-   "count": 15
+   "count": 25
   },
   {
    "kind": "news",
@@ -104,48 +104,48 @@
   {
    "kind": "news",
    "name": "Google News: trucking",
-   "url": "https://news.google.com/rss/search?q=trucking+freight+rates+OR+%22owner-operator%22+OR+FMCSA&hl=en-US&gl=US&ceid=US:en",
+   "url": "https://news.google.com/rss/search?q=trucking+freight+rates+OR+%22owner-operator%22+OR+FMCSA+when:7d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
-   "count": 25
+   "count": 5
   },
   {
    "kind": "news",
    "name": "Google News: towing and trailers",
-   "url": "https://news.google.com/rss/search?q=%22towing+capacity%22+OR+%22trailer+recall%22+OR+%22pickup+payload%22+OR+%22cargo+securement%22&hl=en-US&gl=US&ceid=US:en",
+   "url": "https://news.google.com/rss/search?q=%22towing+capacity%22+OR+%22trailer+recall%22+OR+%22pickup+payload%22+OR+%22cargo+securement%22+OR+%22unsecured+load%22+when:21d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
    "count": 25
   },
   {
    "kind": "news",
-   "name": "EIA Today in Energy",
-   "url": "https://www.eia.gov/rss/todayinenergy.xml",
+   "name": "Google News: pickups and trailers",
+   "url": "https://news.google.com/rss/search?q=pickup+truck+towing+OR+%22travel+trailer%22+OR+%22utility+trailer%22+when:14d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
    "count": 25
   },
   {
    "kind": "news",
    "name": "Google News: fuel prices",
-   "url": "https://news.google.com/rss/search?q=%22diesel+prices%22+OR+%22gas+prices%22+national+average&hl=en-US&gl=US&ceid=US:en",
+   "url": "https://news.google.com/rss/search?q=%22diesel+prices%22+OR+%22gas+prices%22+national+average+when:7d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
    "count": 25
   },
   {
    "kind": "video",
    "name": "U-Haul",
-   "ok": true,
-   "count": 2
+   "ok": false,
+   "count": 0
   },
   {
    "kind": "video",
    "name": "etrailer",
    "ok": true,
-   "count": 4
+   "count": 3
   },
   {
    "kind": "video",
    "name": "PODS",
    "ok": true,
-   "count": 4
+   "count": 2
   },
   {
    "kind": "video",
@@ -162,8 +162,8 @@
   {
    "kind": "video",
    "name": "TWO MEN AND A TRUCK",
-   "ok": true,
-   "count": 4
+   "ok": false,
+   "count": 0
   },
   {
    "kind": "video",
@@ -173,26 +173,13 @@
   },
   {
    "kind": "video",
-   "name": "FreightWaves",
-   "ok": true,
-   "count": 4
-  },
-  {
-   "kind": "video",
    "name": "U-Pack",
    "ok": true,
-   "count": 4
-  },
-  {
-   "kind": "video",
-   "name": "FMCSA",
-   "ok": false,
-   "count": 0,
-   "error": "HTTP Error 404: Not Found"
+   "count": 3
   }
  ],
- "news_items": 69,
- "video_items": 35,
- "ok_sources": 29,
- "total_sources": 30
+ "news_items": 114,
+ "video_items": 22,
+ "ok_sources": 26,
+ "total_sources": 28
 }
