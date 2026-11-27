@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-27T01:49:11+00:00",
+ "run_at": "2026-11-27T16:50:10+00:00",
  "sources": [
   {
    "kind": "fuel",
@@ -85,7 +85,7 @@
    "name": "Google News: relocation",
    "url": "https://news.google.com/rss/search?q=%22moving+costs%22+OR+%22moving+scam%22+OR+%22moving+truck%22+OR+relocation+movers+when:14d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
-   "count": 17
+   "count": 25
   },
   {
    "kind": "news",
@@ -106,7 +106,7 @@
    "name": "Google News: trucking",
    "url": "https://news.google.com/rss/search?q=trucking+freight+rates+OR+%22owner-operator%22+OR+FMCSA+when:7d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
-   "count": 2
+   "count": 5
   },
   {
    "kind": "news",
