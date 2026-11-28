@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-28T01:30:20+00:00",
+ "run_at": "2026-11-28T15:41:43+00:00",
  "sources": [
   {
    "kind": "fuel",
@@ -85,7 +85,7 @@
    "name": "Google News: relocation",
    "url": "https://news.google.com/rss/search?q=%22moving+costs%22+OR+%22moving+scam%22+OR+%22moving+truck%22+OR+relocation+movers+when:14d&hl=en-US&gl=US&ceid=US:en",
    "ok": true,
-   "count": 25
+   "count": 16
   },
   {
    "kind": "news",
